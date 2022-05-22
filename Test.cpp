@@ -37,13 +37,13 @@ TEST_CASE("checking the size of the organization")
       .add_sub("left_hand", "left_emp_1") 
       .add_sub("right_hand", "right_emp_2")        
       .add_sub("left_hand", "left_emp_2") ;
-    CHECK_EQ(organization.get_num_of_employees(),7);
+    CHECK_EQ(organization1.get_num_of_employees(),7);
 
     organization1.add_root("NEW_BOSS");
-    CHECK_EQ(organization.get_num_of_employees(),7);
+    CHECK_EQ(organization1.get_num_of_employees(),7);
     organization1.add_sub("left_hand", "left_emp_3") ;
     organization1.add_sub("left_hand", "left_emp_4") ;
-    CHECK_EQ(organization.get_num_of_employees(),9);
+    CHECK_EQ(organization1.get_num_of_employees(),9);
 
 
 
